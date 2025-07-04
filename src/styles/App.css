@@ -1,0 +1,7 @@
+.app-container { /* Menambahkan padding dan margin untuk konten utama */
+  padding: 2rem; /* Padding di dalam konten */
+  margin-top: 64px; /* Menghindari konten tertutup oleh AppBar */
+  min-height: 100vh; /* Minimal tinggi konten agar mengisi seluruh layar */
+  background-color: #f4f4f4; /* Warna latar belakang */
+  font-family: 'Arial', sans-serif; /* Jenis font */
+}

@@ -1,0 +1,18 @@
+.navbar-title { /* Menambahkan flexbox untuk mengatur tata letak judul */
+  flex-grow: 1; 
+  font-weight: bold; /* Menjadikan teks judul tebal */
+}
+
+.navbar-links { /* Menambahkan flexbox untuk mengatur tata letak link */
+  display: flex; 
+  gap: 12px; /* Jarak antara link */
+}
+
+.navbar-link { /* Menghilangkan dekorasi default link */
+  text-decoration: none; /* Menghilangkan garis bawah */
+  color: white; /* Warna teks link */
+}
+
+.navbar-link:hover { /* Efek hover saat mouse diarahkan ke link */
+  color: #ffd700; /* efek hovernya berubah warna menjadi kuning */
+}
