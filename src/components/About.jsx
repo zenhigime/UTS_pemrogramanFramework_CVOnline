@@ -12,7 +12,7 @@ import {
 import "../styles/About.css";
 
 const GITHUB_USERNAME = "zenhigime"; 
-const VIDEO_URL = "https://www.youtube.com/watch?v=VIDEO_ID"; 
+const VIDEO_URL = "https://youtu.be/C0G5deYU48o"; 
 const GITHUB_REPO_LINK = "https://github.com/zenhigime/UTS_pemrogramanFramework_CVOnline";
 
 const About = () => { // Komponen About

@@ -8,10 +8,10 @@ import "./styles/App.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(
+root.render( // Merender komponen App ke dalam elemen root
 	<React.StrictMode>
-		<BrowserRouter>
-			<App />
+		<BrowserRouter> {/* BrowserRouter untuk mengelola navigasi di aplikasi */}
+			<App /> {/* Komponen App */}
 		</BrowserRouter>
 	</React.StrictMode>,
 );
