@@ -15,25 +15,17 @@ import {
 } from "@mui/material";
 import "../styles/Home.css";
 
-const Home = () => {
-  // Komponen Home
+const Home = () => { // Komponen Home
   return (
-    <Box className="home-container">
-      {" "}
-      {/* Box untuk mengelompokkan konten */}
-      <Typography variant="h4" gutterBottom>
-        {" "}
-        {/* Typography untuk judul halaman, dengan variant h4 untuk ukuran teks yang lebih besar */}
+    <Box className="home-container"> {/* Box untuk mengelompokkan konten */}
+      <Typography variant="h4" gutterBottom> {/* Typography untuk judul halaman, dengan variant h4 untuk ukuran teks yang lebih besar */}
         Curriculum Vitae — Ahmad Walid Jamal
       </Typography>
+
       {/* Personal Information */}
-      <Card className="cv-card">
-        {" "}
-        {/* Card untuk mengelompokkan konten personal information */}
-        <CardContent>
-          {" "}
-          {/* CardContent untuk mengatur tata letak konten di dalam card */}
-          <Typography variant="h5" gutterBottom>
+      <Card className="cv-card"> {/* Card untuk mengelompokkan konten personal information */}
+        <CardContent> {/* CardContent untuk mengatur tata letak konten di dalam card */}
+          <Typography variant="h5" gutterBottom> 
             👤 Personal Information
           </Typography>
           <Typography>Name: Ahmad Walid Jamal</Typography>
@@ -52,41 +44,27 @@ const Home = () => {
           <Typography>Email: ahmadwalidjamal@gmail.com</Typography>
         </CardContent>
       </Card>
-      <Divider className="section-divider" />{" "}
-      {/* Divider untuk pembatas antar bagian */}
+
+      <Divider className="section-divider" /> {/* Divider untuk pembatas antar bagian */}
+
       {/* Formal Education */}
-      <Card className="cv-card">
-        {" "}
-        {/* Card untuk mengelompokkan konten formal education */}
+      <Card className="cv-card"> {/* Card untuk mengelompokkan konten formal education */}
         <CardContent>
           <Typography variant="h5" gutterBottom>
             🎓 Formal Education
           </Typography>
-          <TableContainer component={Paper}>
-            {" "}
-            {/* TableContainer untuk mengelompokkan tabel */}
-            <Table>
-              {" "}
-              {/* Table untuk menampilkan data dalam bentuk tabel */}
-              <TableHead>
-                {" "}
-                {/* TableHead untuk mengelompokkan header tabel */}
-                <TableRow>
-                  {" "}
-                  {/* TableRow untuk mengelompokkan baris dalam tabel */}
-                  <TableCell>Period (Years)</TableCell>{" "}
-                  {/* TableCell untuk mengelompokkan sel dalam tabel */}
+          <TableContainer component={Paper}> {/* TableContainer untuk mengelompokkan tabel */}
+            <Table> {/* Table untuk menampilkan data dalam bentuk tabel */}
+              <TableHead> {/* TableHead untuk mengelompokkan header tabel */}
+                <TableRow> {/* TableRow untuk mengelompokkan baris dalam tabel */}
+                  <TableCell>Period (Years)</TableCell> {/* TableCell untuk mengelompokkan sel dalam tabel */}
                   <TableCell>School / Institute</TableCell>
                   <TableCell>Major</TableCell>
                   <TableCell>Education State</TableCell>
                 </TableRow>
               </TableHead>
-              <TableBody>
-                {" "}
-                {/* TableBody untuk mengelompokkan body tabel */}
-                <TableRow>
-                  {" "}
-                  {/* TableRow untuk mengelompokkan baris dalam tabel */}
+              <TableBody> {/* TableBody untuk mengelompokkan body tabel */}
+                <TableRow> {/* TableRow untuk mengelompokkan baris dalam tabel */}
                   <TableCell>2008 - 2012</TableCell>
                   <TableCell>MI Ta‘alumul Huda</TableCell>
                   <TableCell>-</TableCell>
@@ -115,7 +93,9 @@ const Home = () => {
           </TableContainer>
         </CardContent>
       </Card>
+
       <Divider className="section-divider" />
+
       {/* Non-Formal Education */}
       <Card className="cv-card">
         <CardContent>
@@ -152,43 +132,32 @@ const Home = () => {
           </TableContainer>
         </CardContent>
       </Card>
+
       <Divider className="section-divider" />
+
       {/* Language Mastery */}
-      <Card className="cv-card">
-        {" "}
-        {/* Card untuk mengelompokkan konten language mastery */}
+      <Card className="cv-card"> {/* Card untuk mengelompokkan konten language mastery */}
         <CardContent>
           <Typography variant="h5" gutterBottom>
             🌐 Language Mastery
           </Typography>
-          <TableContainer component={Paper}>
-            {" "}
-            {/* TableContainer untuk mengelompokkan tabel */}
+          <TableContainer component={Paper}> {/* TableContainer untuk mengelompokkan tabel */}
             <Table>
               <TableHead>
                 <TableRow>
                   <TableCell
-                    rowSpan={
-                      2
-                    } /* rowSpan untuk menggabungkan sel secara vertikal */
+                    rowSpan={2} /* rowSpan untuk menggabungkan sel secara vertikal */
                     align="center" /* align untuk mengatur posisi teks */
-                    sx={{
-                      verticalAlign: "middle",
-                      fontWeight: "bold",
-                    }} /* sx untuk menambahkan style secara inline */
+                    sx={{ verticalAlign: "middle", fontWeight: "bold" }} /* sx untuk menambahkan style secara inline */
                   >
                     Language
                   </TableCell>
                   <TableCell
-                    colSpan={
-                      4
-                    } /* colSpan untuk menggabungkan sel secara horizontal */
+                    colSpan={4} /* colSpan untuk menggabungkan sel secara horizontal */
                     align="center" /* align untuk mengatur posisi teks */
-                    sx={{
-                      fontWeight: "bold",
-                    }} /* sx untuk menambahkan style secara inline */
+                    sx={{ fontWeight: "bold" }} /* sx untuk menambahkan style secara inline */
                   >
-                    Mastery
+                    Mastery 
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -218,7 +187,8 @@ const Home = () => {
           </TableContainer>
         </CardContent>
       </Card>
-      <Typography variant="body2" align="right" sx={{ marginTop: 3 }}>
+
+      <Typography variant="body2" align="right" sx={{ marginTop: 3 }}> 
         Makassar
       </Typography>
     </Box>
